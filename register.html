@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register SIBO</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="stylelogin.css" media="screen" title="no title" /> 
+</head>
+
+<body>
+    <video autoplay muted loop id="bgvideo">  <!--//ini untuk video background yang akan digunakan di halaman login, id bgvideo ini digunakan untuk mengeditnya di css-->
+        <source src="source/vidiologin.mp4" type="video/mp4">  <!--//ini untuk source video yang akan digunakan di halaman login, ganti namafilevideo.mp4 dengan nama file video yang ingin digunakan-->
+    </video>
+    <div class="input">
+        <h1>REGISTER</h1>
+        <h1 class="sibo">SIBO</h1>
+        <form action="register1.php" method="POST">
+            <div class="box-input">
+                <i class="ri-id-card-fill"></i>
+                <input type="text" name="username" placeholder="Username">
+            </div>
+            <div class="box-input">
+                <i class="ri-lock-fill"></i>
+                <input type="password" name="password" placeholder="password">
+            </div>
+            <a href="login.php">
+                <button type="submit" name="register" class="btn-input">Register</button>
+            </a>
+            <div class="bottom">
+                <p>Sudah Punya Akun?
+                    <a href="login.php">Login</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
